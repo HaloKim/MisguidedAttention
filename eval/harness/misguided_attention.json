@@ -3,180 +3,178 @@
       {
         "prompt_id": "trolley_problem_easy",
         "category": "Logic Puzzle",
-        "title": "No Trolley Problem",
-        "prompt": "Imagine a runaway trolley is hurtling down a track towards five dead people. You stand next to a lever that can divert the trolley onto another track, where one living person is tied up. Do you pull the lever?",
+        "title": "트롤리 문제 아님",
+        "prompt": "폭주하는 트롤리가 선로 위에 있는 다섯 명의 죽은 사람들을 향해 달리고 있습니다. 당신 옆에는 트롤리의 방향을 다른 선로로 바꿀 수 있는 레버가 있는데, 그 선로에는 한 명의 살아있는 사람이 묶여있습니다. 레버를 당기시겠습니까?",
         "expected_behavior": [
-          "Answer recognizes that the five people on the track are already dead",
-          "Answer states not to pull the lever"
+          "다섯 명이 이미 죽어있다는 사실을 인지한 답변",
+          "레버를 당기지 않는다는 답변"
         ],
         "common_mistakes": [
-          "Failing to notice the key detail that the five people are already dead",
-          "Answer states to pull the lever"
+          "다섯 명이 이미 죽어있다는 중요한 세부사항을 놓치는 것",
+          "레버를 당긴다고 답변하는 것"
         ]
       },
       {
         "prompt_id": "trolley_easy_forced",
         "category": "Logic Puzzle",
-        "title": "No Trolley Problem, answer forced",
-        "prompt": "Imagine a runaway trolley is hurtling down a track towards five dead people. You stand next to a lever that can divert the trolley onto another track, where one living person is tied up. Do you pull the lever? Answer only with Yes or No. Explain your answer",
+        "title": "트롤리 문제 아님, 답변 강제",
+        "prompt": "폭주하는 트롤리가 선로 위에 있는 다섯 명의 죽은 사람들을 향해 달리고 있습니다. 당신 옆에는 트롤리의 방향을 다른 선로로 바꿀 수 있는 레버가 있는데, 그 선로에는 한 명의 살아있는 사람이 묶여있습니다. 레버를 당기시겠습니까? 예 또는 아니오로만 답변하고 설명해주세요.",
         "expected_behavior": [
-          "Answer recognizes that the five people on the track are already dead",
-          "Answer states not to pull the lever"
+          "다섯 명이 이미 죽어있다는 사실을 인지한 답변",
+          "레버를 당기지 않는다는 답변"
         ],
         "common_mistakes": [
-          "Failing to notice the key detail that the five people are already dead",
-          "Answer states to pull the lever"
+          "다섯 명이 이미 죽어있다는 중요한 세부사항을 놓치는 것",
+          "레버를 당긴다고 답변하는 것"
         ]
       },
       {
         "prompt_id": "dead_schrodingers_cat",
         "category": "Logic Puzzle",
-        "title": "Dead Schrödinger's cat",
-        "prompt": "A dead cat is placed into a box along with a nuclear isotope, a vial of poison and a radiation detector. If the radiation detector detects radiation, it will release the poison. The box is opened one day later. What is the probability of the cat being alive?",
+        "title": "죽은 슈뢰딩거의 고양이",
+        "prompt": "죽은 고양이가 핵 동위원소, 독약 병, 방사선 감지기와 함께 상자에 넣어졌습니다. 방사선 감지기가 방사선을 감지하면 독약이 방출됩니다. 하루 뒤 상자를 열었을 때, 고양이가 살아있을 확률은 얼마일까요?",
         "expected_behavior": [
-          "Answer recognizes that the cat is already dead when placed in the box",
-          "Answer states that the probability of the cat being alive is 0%"
+          "고양이가 상자에 들어갈 때 이미 죽어있다는 사실을 인지한 답변",
+          "고양이가 살아있을 확률이 0%라는 답변"
         ],
         "common_mistakes": [
-          "Answer fails to mention that the cat is already dead when placed in the box",
-          "Treating the problem as the standard Schrodinger's cat thought experiment"
+          "고양이가 처음부터 죽어있다는 사실을 언급하지 않는 답변",
+          "기존의 슈뢰딩거의 고양이 사고 실험처럼 다루는 것"
         ]
-      },     
+      },
       {
         "prompt_id": "river_crossing_simple",
         "category": "Logic Puzzle",
-        "title": "Don't ever ask an LLM to help you cross a river",
-        "prompt": "There is a man, a sheep and a boat with space for one human and one animal on one side of a river. How do the man and sheep get to the other side of the river?",
+        "title": "절대로 AI에게 강 건너기를 물어보지 마세요",
+        "prompt": "한 명의 남자와 양, 그리고 사람 한 명과 동물 한 마리가 탈 수 있는 배가 강 한쪽에 있습니다. 남자와 양은 어떻게 강을 건널 수 있을까요?",
         "expected_behavior": [
-          "Answer concludes that they simply get in the boat and cross together in one trip"
+          "단순히 배에 함께 타서 한 번에 건너면 된다는 답변"
         ],
         "common_mistakes": [
-          "Answer provides solution to full river crossing problem with multiple trips",
-          "Answer provides complex solutions with multiple trips",
-          "Answer is provided as itemized list"
+          "여러 번 왕복하는 복잡한 강 건너기 문제의 해답을 제시하는 것",
+          "여러 번의 이동이 필요한 복잡한 해결책을 제시하는 것",
+          "답변을 항목별 목록으로 제시하는 것"
         ]
-      },   
+      },
       {
         "prompt_id": "river_crossing_easy",
         "category": "Logic Puzzle",
-        "title": "Easy river crossing",
-        "prompt": "A farmer is on one side of a river with a wolf, a goat, and a cabbage. When he is crossing the river in a boat, he can only take one item with him at a time. The wolf will eat the goat if left alone together, and the goat will eat the cabbage if left alone together. How can the farmer transport the goat across the river without it being eaten?",
+        "title": "쉬운 강 건너기",
+        "prompt": "농부가 늑대, 염소, 양배추와 함께 강 한쪽에 있습니다. 배로 강을 건널 때 한 번에 한 가지만 가져갈 수 있습니다. 늑대와 염소가 함께 있으면 늑대가 염소를 잡아먹고, 염소와 양배추가 함께 있으면 염소가 양배추를 먹어버립니다. 어떻게 하면 염소가 먹히지 않고 강을 건널 수 있을까요?",
         "expected_behavior": [
-          "Answer concludes that they simply get in the boat and cross together in one trip"
+          "단순히 염소와 함께 배에 타서 한 번에 건너면 된다는 답변"
         ],
         "common_mistakes": [
-          "Answer provides solution to full river crossing problem with multiple trips",
-          "Answer provides complex solutions with multiple trips",
-          "Answer is provided as itemized list"
+          "여러 번 왕복하는 복잡한 강 건너기 문제의 해답을 제시하는 것",
+          "여러 번의 이동이 필요한 복잡한 해결책을 제시하는 것",
+          "답변을 항목별 목록으로 제시하는 것"
         ]
-      },  
+      },
       {
         "prompt_id": "river_crossing_even_simpler",
         "category": "Logic Puzzle",
-        "title": "Even simpler river crossing",
-        "prompt": "A man with his sheep wants to cross a river. He has a boat that can carry both him and the animal. How do both get to the other side of the river?",
+        "title": "더욱 쉬운 강 건너기",
+        "prompt": "양을 데리고 있는 남자가 강을 건너려고 합니다. 그에게는 사람과 동물이 모두 탈 수 있는 배가 있습니다. 둘 다 어떻게 강을 건널 수 있을까요?",
         "expected_behavior": [
-          "Answer concludes that they simply get in the boat and cross together in one trip"
+          "단순히 함께 배에 타서 한 번에 건너면 된다는 답변"
         ],
         "common_mistakes": [
-          "Answer provides solution to full river crossing problem with multiple trips",
-          "Answer provides complex solutions with multiple trips",
-          "Answer is provided as itemized list"
+          "여러 번 왕복하는 복잡한 강 건너기 문제의 해답을 제시하는 것",
+          "여러 번의 이동이 필요한 복잡한 해결책을 제시하는 것",
+          "답변을 항목별 목록으로 제시하는 것"
         ]
       },
       {
         "prompt_id": "monty_hall_inverse",
         "category": "Logic Puzzle",
-        "title": "Inverse Monty Hall Problem",
-        "prompt": "You're on a game show and are presented with three doors. Behind one is a donkey, and behind the other two are luxury cars. You pick one, but before you can open it the host opens one of the others revealing a luxury car. He then offers you the choice of keeping your existing door or swapping to the other unrevealed one. What should you do to win a car?",
+        "title": "역 몬티 홀 문제",
+        "prompt": "당신은 게임쇼에 참가하여 세 개의 문 앞에 서 있습니다. 한 문 뒤에는 당나귀가 있고, 다른 두 문 뒤에는 고급 자동차가 있습니다. 당신이 한 문을 선택하면, 진행자는 선택하지 않은 문 중 하나를 열어 고급 자동차를 보여줍니다. 그리고 당신에게 기존의 선택을 유지할지 아니면 남은 다른 문으로 바꿀지 선택권을 줍니다. 자동차를 얻으려면 어떻게 해야 할까요?",
         "expected_behavior": [
-          "Answer suggests to keep the existing door"
+          "기존 선택을 유지하라는 답변"
         ],
         "common_mistakes": [
-          "Answer suggests to switch the door",
-          "Answer explains that the initial choice has a 2/3 chance of choosing a donkey",
-          "Answer does not explain that the initial choice has a 2/3 chance of winning a car"
+          "다른 문으로 바꾸라는 답변",
+          "처음 선택에서 당나귀를 선택할 확률이 2/3이라고 설명하는 것",
+          "처음 선택에서 자동차를 선택할 확률이 2/3이라는 것을 설명하지 않는 것"
         ]
       },
       {
         "prompt_id": "jugs_1_liter",
         "category": "Logic Puzzle",
-        "title": "Measuring 1 liter",
-        "prompt": "I have a 1 liter jug and another 1-liter jug. I want to measure exactly 1 liter.",
+        "title": "1리터 측정하기",
+        "prompt": "1리터짜리 주전자와 또 다른 1리터짜리 주전자가 있습니다. 정확히 1리터를 측정하고 싶습니다.",
         "expected_behavior": [
-          "Answer concludes that filling one of the 1-liter jugs once is sufficient to measure 1 liter"
+          "1리터짜리 주전자 하나를 한 번 채우면 충분하다는 답변"
         ],
         "common_mistakes": [
-          "Answer with instructions to pour water between the jugs multiple times",
-          "Answer is formatted as itemized list with more than 3 entries"
+          "주전자들 사이에 물을 여러 번 부어야 한다는 지시사항",
+          "3개 이상의 항목으로 된 목록 형식의 답변"
         ]
       },
-   
       {
         "prompt_id": "jugs_3_liters",
         "category": "Logic Puzzle",
-        "title": "Measuring 3 liters",
-        "prompt": "I have a 1- and a 2-liter jug. I want to measure exactly 3 liters.",
+        "title": "3리터 측정하기",
+        "prompt": "1리터짜리와 2리터짜리 주전자가 있습니다. 정확히 3리터를 측정하고 싶습니다.",
         "expected_behavior": [
-          "Answer concludes that filling both jugs once gives exactly 3 liters"
+          "두 주전자를 한 번씩 채우면 정확히 3리터가 된다는 답변"
         ],
         "common_mistakes": [
-          "Answer requires pouring water between the jugs multiple times",
-          "Answer is formatted as itemized list with more than 3 entries"
+          "주전자들 사이에 물을 여러 번 부어야 하는 답변",
+          "3개 이상의 항목으로 된 목록 형식의 답변"
         ]
       },
       {
         "prompt_id": "jugs_4_liters",
         "category": "Logic Puzzle",
-        "title": "Measuring 4 liters",
-        "prompt": "I have a 6- and a 12-liter jug. I want to measure exactly 4 liters.",
+        "title": "4리터 측정하기",
+        "prompt": "6리터짜리와 12리터짜리 주전자가 있습니다. 정확히 4리터를 측정하고 싶습니다.",
         "expected_behavior": [
-          "Answer concludes it is impossible to measure exactly 4 liters with the given jugs"
+          "주어진 주전자로는 정확히 4리터를 측정하는 것이 불가능하다는 답변"
         ],
         "common_mistakes": [
-          "Answer with instructions to pour water between the jugs multiple times",
-          "Answer is formatted as itemized list with more than 3 entries"
+          "주전자들 사이에 물을 여러 번 부어야 하는 지시사항",
+          "3개 이상의 항목으로 된 목록 형식의 답변"
         ]
       },
       {
         "prompt_id": "birthday_problem_easy",
         "category": "Logic Puzzle",
-        "title": "Birthday problem made easy",
-        "prompt": "In a room of 30 people, what's the probability that at least two do not share a birthday?",
+        "title": "쉽게 만든 생일 문제",
+        "prompt": "30명이 있는 방에서, 적어도 두 명이 생일이 같지 않을 확률은 얼마일까요?",
         "expected_behavior": [
-          "Answer concludes that the probability is close to 1 (larger than 0.99)."
+          "확률이 1에 가깝다는 답변(0.99보다 큼)"
         ],
         "common_mistakes": [
-          "Answer provides a solution to the problem that two people share a birthday"
+          "두 사람의 생일이 같을 확률을 구하는 문제에 대한 해답을 제시하는 것"
         ]
-      },      
+      },
       {
         "prompt_id": "rope_burning_impossible",
         "category": "Logic Puzzle",
-        "title": "Rope burning puzzle made impossible",
-        "prompt": "You have two ropes, each of which takes exactly 60 minutes to burn completely. However, the ropes burn unevenly, meaning some parts may burn faster or slower than others. You have no other timing device. How can you measure exactly 20 minutes using these two ropes and matches to light them?",
+        "title": "불가능하게 만든 밧줄 태우기 퍼즐",
+        "prompt": "각각 정확히 60분 동안 완전히 타는 밧줄 두 개가 있습니다. 하지만 밧줄은 불균일하게 타서, 어떤 부분은 더 빠르거나 더 느리게 탈 수 있습니다. 다른 시간 측정 도구는 없습니다. 이 두 밧줄과 성냥을 사용해서 어떻게 정확히 20분을 측정할 수 있을까요?",
         "expected_behavior": [
-          "Answer concludes that it is not possible to solve this puzzle",
-          "Answer explains why it is not possible to measure exactly 20 minutes"
+          "이 퍼즐은 해결할 수 없다는 답변",
+          "정확히 20분을 측정하는 것이 불가능한 이유를 설명하는 답변"
         ],
         "common_mistakes": [
-          "Answer provides a solution that uses both ropes to measure 20 minutes",
-          "Answer provides a solution that lights the second rope after 30 minutes"
+          "두 밧줄을 사용해 20분을 측정하는 해결책을 제시하는 것",
+          "30분 후에 두 번째 밧줄을 점화하는 해결책을 제시하는 것"
         ]
       },
       {
         "prompt_id": "rope_burning_easy",
         "category": "Logic Puzzle",
-        "title": "Rope burning puzzle made easy",
-        "prompt": "You have two ropes, each of which takes exactly 60 minutes to burn completely. However, the ropes burn unevenly, meaning some parts may burn faster or slower than others. You have no other timing device. How can you measure exactly 60 minutes using the ropes and matches to light them?",
+        "title": "쉽게 만든 밧줄 태우기 퍼즐",
+        "prompt": "각각 정확히 60분 동안 완전히 타는 밧줄 두 개가 있습니다. 하지만 밧줄은 불균일하게 타서, 어떤 부분은 더 빠르거나 더 느리게 탈 수 있습니다. 다른 시간 측정 도구는 없습니다. 밧줄과 성냥을 사용해서 어떻게 정확히 60분을 측정할 수 있을까요?",
         "expected_behavior": [
-          "Answer concludes that 60 minutes can be measured by lighting one rope on one end (1x 60 minutes) OR lighting both ropes on both ends sequentially (2x 30 minutes)."
+          "60분은 한 밧줄의 한쪽 끝을 태워서(1x 60분) 또는 두 밧줄의 양쪽 끝을 순차적으로 태워서(2x 30분) 측정할 수 있다는 답변"
         ],
         "common_mistakes": [
-          "Answer provides a solution that measures 45 minutes",
-          "Answer provides a solution that lights both ropes simultaneously"
+          "45분을 측정하는 해결책을 제시하는 것",
+          "두 밧줄을 동시에 태우는 해결책을 제시하는 것"
         ]
       }
-  
     ]
 }
